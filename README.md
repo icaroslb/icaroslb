@@ -5,13 +5,13 @@ I graduated and am mastering Computer Science at the Federal University of Ceara
 ## Main projects
 
 - [Ray tracing renderer made in C++ using SDL2 and OpenGL](https://github.com/icaroslb/CG_2)
-- [Spy game: scape labirithm game made in C++ using SDL2 and OpenGL](https://github.com/icaroslb/SpyGame)
-- [LitoEngine: algebra engine used in my projects](https://github.com/icaroslb/LitoEngine)
+- [Spy Game: labyrinth escape game made in C++ using SDL2 and OpenGL](https://github.com/icaroslb/SpyGame)
+- [LitoEngine: algebra engine used in my other projects](https://github.com/icaroslb/LitoEngine)
 
 ## Researchs
 
-- [Shooting simulator developed in Unity to Oculus Quest 2](https://periodicos.ufpb.br/index.php/cei/issue/view/2817/708)
-- [Laser capturer to serve as middleware to click-n-point target shooting games](https://ieeexplore.ieee.org/document/9637635)
+- [Shooting simulator developed in Unity for Oculus Quest 2](https://periodicos.ufpb.br/index.php/cei/issue/view/2817/708)
+- [Laser capturer to serve as middleware to click-n-point target shooting gamesLaser capturer to serve as middleware to click-n-point target shooting games](https://ieeexplore.ieee.org/document/9637635)
 
 ## Languages
 
