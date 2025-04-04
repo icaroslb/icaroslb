@@ -1,0 +1,148 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    font-family: Arial;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0px;
+}
+
+.icone {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#i_barbosa_img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#i_barbosa_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 100px;
+}
+
+#i_barbosa_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.i_barbosa_ul{
+    list-style-type: none;
+}
+
+.i_barbosa_even_li {
+    background-color: #1C1B22;
+}
+
+.i_barbosa_odd_li {
+    background-color: #15141A;
+}
+
+#project_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    gap: 1%;
+}
+
+.project_card_div {
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: #15141A;
+    > img {
+        width: 95%;
+        height: 300px;
+        display: block;
+        margin: 10px;
+        margin-bottom: 0px;
+        border-radius: 25px 25px 0px 0px;
+        object-fit: cover;
+    }
+    > p {
+        margin: 0px;
+    }
+}
+
+.i_barbosa_even_li, .i_barbosa_odd_li {
+    margin-bottom: 10px;
+}
+
+.i_barbosa_even_li, .i_barbosa_odd_li, .project_card_div {
+    > p {
+        margin: 0px;
+        font-size: medium;
+        > bold {
+            font-size: x-large;
+        }
+    }
+}
+
+.justify {
+    text-align: justify;
+}
+
+.prograss_bar_div {
+    display: flex;
+    flex-direction: row;
+}
+
+.progress_label_div {
+    width: 20%;
+}
+
+.progress_bar {
+    width: 70%;
+}
+
+.progress_percent {
+    width: 10%;
+    text-align: center;
+}
+
+.progress_bar {
+    background-color: #5B5B66;
+}
+
+.progress_bar::-webkit-progress-value {
+    background-color: #003eaa;
+}
+
+.progress_bar::-moz-progress-bar {
+    background-color: #003eaa;
+}
+
+@media screen and (max-width: 800px) {
+    .project_card_div {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .project_card_div {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .project_card_div {
+        width: 32.66%;
+    }
+}
