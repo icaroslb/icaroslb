@@ -67,7 +67,7 @@ body {
     margin-top: 10px;
     border-radius: 25px;
     background-color: #15141A;
-    > img {
+    img {
         width: 95%;
         height: 300px;
         display: block;
@@ -76,7 +76,7 @@ body {
         border-radius: 25px 25px 0px 0px;
         object-fit: cover;
     }
-    > p {
+    p {
         margin: 0px;
     }
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .i_barbosa_even_li, .i_barbosa_odd_li, .project_card_div {
-    > p {
+    p {
         margin: 0px;
         font-size: medium;
         > bold {
@@ -99,26 +99,34 @@ body {
     text-align: justify;
 }
 
-.prograss_bar_div {
-    display: flex;
-    flex-direction: row;
-}
+#progress_table {
+    width: 100%;
+    table-layout: auto;
 
-.progress_label_div {
-    width: 20%;
+    tr {
+        th, td {
+            border-bottom: 1px solid #3f3f3f;
+            vertical-align: middle;
+            text-align: center;
+
+            .progress_bar {
+                width: 100%;
+            }
+        }
+
+        .progress_bar_td {
+            width: 80%;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: #15141A;
+    }
 }
 
 .progress_bar {
-    width: 70%;
-}
-
-.progress_percent {
-    width: 10%;
-    text-align: center;
-}
-
-.progress_bar {
-    background-color: #5B5B66;
+    background-color: #00000000;
+    border: none;
 }
 
 .progress_bar::-webkit-progress-value {
