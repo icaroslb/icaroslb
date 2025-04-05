@@ -1,6 +1,6 @@
 ### Hi there, I'm Ícaro! 👋
 
-I graduated and am mastering Computer Science at the Federal University of Ceara (UFC). I love math, games, and working with both together.
+Graduated in Computer Science by Universidade Federal do Ceará (2021) and master in Computer Science, with emphasis in Computer Graphics and Virtual Reality (2024). I love math, games, and working with both together.
 
 ## Main projects
 
