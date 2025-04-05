@@ -16,7 +16,7 @@
         <div>
             <img id="i_barbosa_img" alt="Ícaro Barbosa photo" src="./data/ibarbosa.jpg">
             <h1>Ícaro Barbosa</h1>
-            <div id="i_barbosa_links">
+            <div id="flex_box i_barbosa_links">
                 <a title="Linkedin" href="www.linkedin.com/in/icarosbarbosa"><i class="fa-brands fa-linkedin icone"></i></a>
                 <a title="Github" href="https://github.com/icaroslb"><i class="fa-brands fa-github icone"></i></a>
                 <a title="Itch.io" href="https://ibarbosa.itch.io/"><i class="fa-brands fa-itch-io icone"></i></a>
@@ -26,6 +26,7 @@
         </div>
     </div>
 
+    <!-- About -->
     <div>
         <h2 class="center">About</h2>
         <p class="justify">
@@ -33,7 +34,75 @@
         </p>
     </div>
 
+    <!-- Buttons -->
     <div>
+        <div id="info_buttons_div" class="flex_box">
+            <button type="button" id="projects_button" class="info_button">Projects</button>
+            <button type="button" id="education_button" class="info_button">Education</button>
+            <button type="button" id="skills_button" class="info_button">Skills</button>
+            <button type="button" id="research_button" class="info_button">Researchs</button>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects_div" class="info_div">
+        <h2 class="center">Projects</h2>
+        <div id="project_cards" class="flex_box">
+
+            <!-- Cleaning Bubble -->
+            <div class="project_card_div">
+                <img src="./data/cleaning_bubble.png">
+                <p><bold>Cleaning Bubble</bold><br>
+                    Global Game Jam 2025<br>
+                    Year: 2025
+                </p>
+                <div class="project_links center">
+                    <a title="Github" href="https://github.com/icaroslb/bubble"><i class="fa-brands fa-github icone"></i></a>
+                    <a title="Itch.io" href="https://ibarbosa.itch.io/cleaning-bubbles"><i class="fa-brands fa-itch-io icone"></i></a>
+                </div>
+            </div>
+
+            <!-- Genius Game -->
+            <div class="project_card_div center">
+                <img src="./data/genius_game.png">
+                <p><bold>Genius Game</bold><br>
+                    Personal Project<br>
+                    Year: 2022
+                </p>
+                <div class="project_links">
+                    <a title="Github" href="https://github.com/icaroslb/Genius_game"><i class="fa-brands fa-github icone"></i></a>
+                </div>
+            </div>
+
+            <!-- Spy Game -->
+            <div class="project_card_div center">
+                <img src="./data/spy_game.png">
+                <p><bold>Spy Game</bold><br>
+                    Personal Project<br>
+                    Year: 2020
+                </p>
+                <div class="project_links center">
+                    <a title="Github" href="git@github.com:icaroslb/SpyGame.git"><i class="fa-brands fa-github icone"></i></a>
+                    <a title="Itch.io" href="https://ibarbosa.itch.io/spy-game"><i class="fa-brands fa-itch-io icone"></i></a>
+                </div>
+            </div>
+
+            <!-- Jogo da Velha - tic tac toe -->
+            <div class="project_card_div center">
+                <img src="./data/jogo_da_velha.png">
+                <p><bold>Jogo da velha - Tic tac toe</bold><br>
+                    Graduation Project<br>
+                    Year: 2017
+                </p>
+                <div class="project_links center">
+                    <a title="Github" href="https://github.com/icaroslb/JogoDaVelha"><i class="fa-brands fa-github icone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education_div" class="info_div">
         <h2 class="center">Education</h2>
         <ul class="i_barbosa_ul">
             <li class="i_barbosa_even_li">
@@ -55,7 +124,8 @@
         </ul>
     </div>
 
-    <div>
+    <!-- Skills -->
+    <div id="skills_div" class="info_div">
         <h2 class="center">Skills</h2>
 
         <p class="center">My self-evaluated skill levels table</p>
@@ -142,63 +212,8 @@
         </table>
     </div>
 
-    <div>
-        <h2 class="center">Projects</h2>
-        <div id="project_cards">
-
-            <!-- Cleaning Bubble -->
-            <div class="project_card_div">
-                <img src="./data/cleaning_bubble.png">
-                <p><bold>Cleaning Bubble</bold><br>
-                    Global Game Jam 2025<br>
-                    Year: 2025
-                </p>
-                <div class="project_links center">
-                    <a title="Github" href="https://github.com/icaroslb/bubble"><i class="fa-brands fa-github icone"></i></a>
-                    <a title="Itch.io" href="https://ibarbosa.itch.io/cleaning-bubbles"><i class="fa-brands fa-itch-io icone"></i></a>
-                </div>
-            </div>
-
-            <!-- Genius Game -->
-            <div class="project_card_div center">
-                <img src="./data/genius_game.png">
-                <p><bold>Genius Game</bold><br>
-                    Personal Project<br>
-                    Year: 2022
-                </p>
-                <div class="project_links">
-                    <a title="Github" href="https://github.com/icaroslb/Genius_game"><i class="fa-brands fa-github icone"></i></a>
-                </div>
-            </div>
-
-            <!-- Spy Game -->
-            <div class="project_card_div center">
-                <img src="./data/spy_game.png">
-                <p><bold>Spy Game</bold><br>
-                    Personal Project<br>
-                    Year: 2020
-                </p>
-                <div class="project_links center">
-                    <a title="Github" href="git@github.com:icaroslb/SpyGame.git"><i class="fa-brands fa-github icone"></i></a>
-                    <a title="Itch.io" href="https://ibarbosa.itch.io/spy-game"><i class="fa-brands fa-itch-io icone"></i></a>
-                </div>
-            </div>
-
-            <!-- Jogo da Velha - tic tac toe -->
-            <div class="project_card_div center">
-                <img src="./data/jogo_da_velha.png">
-                <p><bold>Jogo da velha - Tic tac toe</bold><br>
-                    Graduation Project<br>
-                    Year: 2017
-                </p>
-                <div class="project_links center">
-                    <a title="Github" href="https://github.com/icaroslb/JogoDaVelha"><i class="fa-brands fa-github icone"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div>
+    <!-- Researchs -->
+    <div id="researchs_div" class="info_div">
         <h2 class="center">Researchs</h2>
         <ol>
             <li class="i_barbosa_even_li justify">
@@ -210,5 +225,9 @@
         </ol>
     </div>
 </body>
+
+<footer>
+    <script src="main.js"></script>
+</footer>
 
 </html>

@@ -10,6 +10,11 @@ body {
     margin: 0px;
 }
 
+.flex_box {
+    display: flex;
+    flex-direction: row;
+}
+
 .icone {
     font-size: 50px;
     width: 50px;
@@ -31,9 +36,6 @@ body {
 }
 
 #i_barbosa_links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     gap: 8px;
 }
@@ -41,6 +43,25 @@ body {
 .center {
     text-align: center;
     align-items: center;
+}
+
+#info_buttons_div {
+    justify-content: center;
+    width: 100%;
+    
+    gap: 10px;
+
+    button {
+        padding: 10px;
+    }
+}
+
+.selected_button {
+    background-color: #5B5B66;
+}
+
+.info_div {
+    margin-bottom: 50px;
 }
 
 .i_barbosa_ul{
