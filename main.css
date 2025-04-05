@@ -68,6 +68,13 @@ body {
     list-style-type: none;
 }
 
+#education_collumns_div {
+    width: 100%;
+    ul {
+        flex: 1;
+    }
+}
+
 .i_barbosa_even_li {
     background-color: #1C1B22;
 }
@@ -104,6 +111,7 @@ body {
 
 .i_barbosa_even_li, .i_barbosa_odd_li {
     margin-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
 }
 
 .i_barbosa_even_li, .i_barbosa_odd_li, .project_card_div {
