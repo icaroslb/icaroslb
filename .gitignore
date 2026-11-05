@@ -7,13 +7,9 @@ dist/
 .env
 .env.*
 
-# chaves/certificados (o Godot gera cert.pem/key.pem nas exportações web)
+# chaves/certificados
 *.pem
 *.key
-
-# exportações brutas do Godot e metadados do editor
-build_*/
-*.import
 
 # logs e arquivos de sistema/editor
 *.log
