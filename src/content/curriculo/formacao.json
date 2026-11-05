@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mestrado",
+    "curso": "Mestrado em Ciência da Computação",
+    "instituicao": "Universidade Federal do Ceará (UFC)",
+    "inicio": "2021",
+    "fim": "2024",
+    "descricao": ["Mestrado com foco em Realidade Virtual"]
+  }, {
+    "id": "graduacao",
+    "curso": "Bacharelado em Ciência da Computação",
+    "instituicao": "Universidade Federal do Ceará (UFC)",
+    "inicio": "2017",
+    "fim": "2021",
+    "descricao": []
+  }, {
+    "id": "pos-data-science",
+    "curso": "Pós em Data Science",
+    "instituicao": "Descomplica",
+    "inicio": "2025",
+    "fim": "2026",
+    "descricao": []
+  }
+]

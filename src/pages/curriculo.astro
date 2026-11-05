@@ -1,0 +1,133 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+// Datas no formato "AAAA" ou "AAAA-MM"; ordena do mais recente para o mais antigo.
+const porInicioDesc = (a: { data: { inicio: string } }, b: { data: { inicio: string } }) =>
+  b.data.inicio.localeCompare(a.data.inicio);
+
+const experiencia = (await getCollection('experiencia')).sort(porInicioDesc);
+const formacao = (await getCollection('formacao')).sort(porInicioDesc);
+const porOrdem = (a: { data: { ordem: number } }, b: { data: { ordem: number } }) =>
+  a.data.ordem - b.data.ordem;
+const habilidades = (await getCollection('habilidades')).sort(porOrdem);
+const idiomas = (await getCollection('idiomas')).sort(porOrdem);
+
+const meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+function formatarData(data: string) {
+  const [ano, mes] = data.split('-');
+  return mes ? `${meses[Number(mes) - 1]} ${ano}` : ano;
+}
+const periodo = (inicio: string, fim?: string) =>
+  `${formatarData(inicio)} – ${fim ? formatarData(fim) : 'atual'}`;
+---
+
+<Base title="Currículo" description="Histórico acadêmico e profissional">
+  <h1>Currículo</h1>
+
+  <section>
+    <h2>Experiência profissional</h2>
+    <ol class="timeline">
+      {experiencia.map(({ data }) => (
+        <li>
+          <h3>{data.cargo}</h3>
+          <p class="muted">
+            {data.empresa}{data.local && ` · ${data.local}`} · {periodo(data.inicio, data.fim)}
+          </p>
+          {data.descricao.length > 0 && <ul>{data.descricao.map((d) => <li>{d}</li>)}</ul>}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section>
+    <h2>Formação acadêmica</h2>
+    <ol class="timeline">
+      {formacao.map(({ data }) => (
+        <li>
+          <h3>{data.curso}</h3>
+          <p class="muted">{data.instituicao} · {periodo(data.inicio, data.fim)}</p>
+          {data.descricao.length > 0 && <ul>{data.descricao.map((d) => <li>{d}</li>)}</ul>}
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  {habilidades.length > 0 && (
+    <section>
+      <h2>Habilidades</h2>
+      <dl class="habilidades">
+        {habilidades.map(({ data }) => (
+          <div>
+            <dt>{data.categoria}</dt>
+            <dd>
+              <ul class="tags">{data.itens.map((item) => <li>{item}</li>)}</ul>
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
+
+  {idiomas.length > 0 && (
+    <section>
+      <h2>Idiomas</h2>
+      <ul class="idiomas">
+        {idiomas.map(({ data }) => (
+          <li>
+            <strong>{data.idioma}</strong> <span class="muted">— {data.nivel}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>
+
+<style>
+  .habilidades {
+    margin: 0;
+  }
+  .habilidades > div {
+    margin-bottom: 1rem;
+  }
+  .habilidades dt {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+  .habilidades dd {
+    margin: 0;
+  }
+  .idiomas {
+    list-style: none;
+    padding: 0;
+  }
+  .idiomas li {
+    margin-bottom: 0.4rem;
+  }
+  .timeline {
+    list-style: none;
+    padding: 0;
+    border-left: 2px solid var(--border);
+  }
+  .timeline > li {
+    padding-left: 1.25rem;
+    margin-bottom: 1.75rem;
+    position: relative;
+  }
+  .timeline > li::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  h3 {
+    margin: 0;
+  }
+  .muted {
+    margin: 0.15rem 0 0.5rem;
+  }
+</style>

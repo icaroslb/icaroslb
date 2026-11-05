@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjetoGrid from '../components/ProjetoGrid.astro';
+import LinkExterno from '../components/LinkExterno.astro';
+import { getProjetos } from '../lib/projetos';
+import { NOME, TITULO, BIO, CONTATOS } from '../consts';
+
+const destaques = (await getProjetos()).filter((p) => p.data.destaque);
+---
+
+<Base>
+  <section class="hero">
+    <h1>Olá, eu sou {NOME}</h1>
+    <p class="lead muted">{TITULO}</p>
+    <p>{BIO}</p>
+    <p class="actions">
+      <a class="button" href="/projetos/">Ver projetos</a>
+      <a class="button secondary" href="/curriculo/">Currículo</a>
+    </p>
+    <p class="externos-titulo muted">Me encontre também em:</p>
+    <p class="actions">
+      {CONTATOS.map((c) => <LinkExterno href={c.url}>{c.rotulo}</LinkExterno>)}
+    </p>
+  </section>
+
+  {destaques.length > 0 && (
+    <section>
+      <h2>Destaques</h2>
+      <ProjetoGrid projetos={destaques} />
+    </section>
+  )}
+</Base>
+
+<style>
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin: 0;
+  }
+  .lead {
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+  }
+  .externos-titulo {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 0.9rem;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+</style>

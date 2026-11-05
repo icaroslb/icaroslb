@@ -1,0 +1,28 @@
+[
+  {
+    "id": "backend-esp",
+    "cargo": "Desenvolvedor backend",
+    "empresa": "Escola de Saúde Pública do Ceará (ESP)",
+    "local": "Fortaleza, CE",
+    "inicio": "2025-06",
+    "descricao": []
+  },
+  {
+    "id": "c++-lsbd",
+    "cargo": "Desenvolvedor C++",
+    "empresa": "Laboratório de Sistemas e Banco de Dados (LSBD)",
+    "local": "Fortaleza, CE",
+    "inicio": "2023-04",
+    "fim": "2024-08",
+    "descricao": []
+  },
+  {
+    "id": "iniciacao-cientifica",
+    "cargo": "Pesquisador",
+    "empresa": "Grupo de pesquisa Computação Gráfica, Realidade Virtual e Animações (CRAb) na Universidade Federal do Ceará (UFC)",
+    "local": "Fortaleza, CE",
+    "inicio": "2018",
+    "fim": "2021",
+    "descricao": []
+  }
+]

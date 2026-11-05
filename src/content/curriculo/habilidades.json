@@ -1,0 +1,17 @@
+[
+  {
+    "id": "linguagens",
+    "categoria": "Linguagens",
+    "itens": ["C++", "Python", "Java", "GDScript", "C#", "JavaScript"]
+  },
+  {
+    "id": "engines",
+    "categoria": "Engines e frameworks",
+    "itens": ["Godot", "Unity", "Unreal"]
+  },
+  {
+    "id": "ferramentas",
+    "categoria": "Ferramentas",
+    "itens": ["Git", "Vs Code", "Trello", "ClickUp"]
+  }
+]

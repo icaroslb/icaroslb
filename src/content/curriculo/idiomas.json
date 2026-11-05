@@ -1,0 +1,5 @@
+[
+  { "id": "portugues", "idioma": "Português", "nivel": "Nativo" },
+  { "id": "ingles", "idioma": "Inglês", "nivel": "Intermediário" },
+  { "id": "espanhol", "idioma": "Espanhol", "nivel": "Intermediário" }
+]

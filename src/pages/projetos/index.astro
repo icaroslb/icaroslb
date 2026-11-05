@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjetoGrid from '../../components/ProjetoGrid.astro';
+import { getProjetos } from '../../lib/projetos';
+
+const projetos = await getProjetos();
+const jogos = projetos.filter((p) => p.data.tipo === 'jogo');
+const apps = projetos.filter((p) => p.data.tipo === 'app');
+---
+
+<Base title="Projetos" description="Jogos e aplicativos que desenvolvi">
+  <h1>Projetos</h1>
+  {jogos.length > 0 && (
+    <section>
+      <h2>Jogos</h2>
+      <ProjetoGrid projetos={jogos} />
+    </section>
+  )}
+  {apps.length > 0 && (
+    <section>
+      <h2>Aplicativos</h2>
+      <ProjetoGrid projetos={apps} />
+    </section>
+  )}
+</Base>

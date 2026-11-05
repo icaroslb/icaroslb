@@ -1,0 +1,22 @@
+# dependências e build
+node_modules/
+dist/
+.astro/
+
+# variáveis de ambiente
+.env
+.env.*
+
+# chaves/certificados (o Godot gera cert.pem/key.pem nas exportações web)
+*.pem
+*.key
+
+# exportações brutas do Godot e metadados do editor
+build_*/
+*.import
+
+# logs e arquivos de sistema/editor
+*.log
+.DS_Store
+.vscode/
+.idea/

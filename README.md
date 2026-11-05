@@ -21,7 +21,7 @@ Graduated in Computer Science by Universidade Federal do Ceará (2021) and maste
 
 - LinkedIn: [https://www.linkedin.com/in/icarosbarbosa](https://www.linkedin.com/in/icarosbarbosa)
 - E-Mail: [icaro_s_barbosa@outlook.com](mailto:icaro_s_barbosa@outlook.com)
-- Website: [https://icaroslb.github.io/icaroslb/](https://icaroslb.github.io/icaroslb/)
+- Website: [https://icaroslb.dev.br](https://icaroslb.dev.br)
 - Curriculo Lattes: [http://lattes.cnpq.br/1866858763840341](http://lattes.cnpq.br/1866858763840341)
 
 <!--

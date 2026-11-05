@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  projeto: CollectionEntry<'projetos'>;
+}
+
+const { projeto } = Astro.props;
+const { titulo, resumo, tipo, ano, tecnologias, papel, capa } = projeto.data;
+---
+
+<article class="card">
+  <a href={`/projetos/${projeto.id}/`}>
+    {capa ? <Image src={capa} alt="" width={640} /> : <div class="placeholder">{titulo}</div>}
+  </a>
+  <div class="body">
+    <p class="meta muted">
+      {tipo === 'jogo' ? 'Jogo' : 'Aplicativo'} · {ano}
+    </p>
+    <h3><a href={`/projetos/${projeto.id}/`}>{titulo}</a></h3>
+    {papel && <p class="papel muted">{papel}</p>}
+    <p>{resumo}</p>
+    <ul class="tags">{tecnologias.map((t) => <li>{t}</li>)}</ul>
+  </div>
+</article>
+
+<style>
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img,
+  .placeholder {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: var(--border);
+  }
+  .placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--border);
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .body {
+    padding: 1rem;
+  }
+  h3 {
+    margin: 0.2rem 0 0.4rem;
+  }
+  h3 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .meta {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .papel {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+</style>
