@@ -1,6 +1,6 @@
 ---
 titulo: Puzzle desenvolvido com engine autoral
-capa: ./spy-game.png
+capa: ./spy-game/spy-game.png
 resumo: Jogo feito em C++, realizado como projeto pessoal.
 tipo: jogo
 ano: 2020

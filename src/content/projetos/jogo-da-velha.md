@@ -1,6 +1,6 @@
 ---
 titulo: Puzzle para entendimento de lógica de programação e python
-capa: ./jogo-da-velha.png
+capa: ./jogo-da-velha/jogo-da-velha.png
 resumo: Jogo feito em python, realizado como projeto de graduação.
 tipo: jogo
 ano: 2017

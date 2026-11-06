@@ -1,6 +1,6 @@
 ---
 titulo: Implementação de puzzle
-capa: ./genius-game.png
+capa: ./genius-game/genius-game.png
 resumo: Jogo feito na Unity cópia de Genius, realizado como projeto pessoal.
 tipo: jogo
 ano: 2022
