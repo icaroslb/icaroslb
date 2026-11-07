@@ -1,21 +1,29 @@
-### Hi there, I'm Ícaro! 👋
+# Hi there, I'm Ícaro! 👋
 
-Graduated in Computer Science by Universidade Federal do Ceará (2021) and master in Computer Science, with emphasis in Computer Graphics and Virtual Reality (2024). I love math, games, and working with both together.
+I have been working in development for 8 years. I have diverse experience in game development, including various types of systems and working under tight deadlines. I hold both a bachelor’s degree and a master’s degree in Computer Science from UFC, with a focus on Computer Graphics.
 
 
 
-## Researchs
+## Engines and frameworks
 
-- [DOI>](http://dx.doi.org/10.5753/sbgames_estendido.2023.234057)BARBOSA, ÍCARO S.</bold>; VIDAL, CRETO A. ; C. NETO, JOAQUIM BENTO ; L. JÚNIOR, ANTÔNIO JOSÉ M. ; GOMES, GEORGE ALLAN M. . Proposing an architecture for developing tactical shooter games employing Virtual Reality. In: Anais Estendidos do Simpósio Brasileiro de Jogos e Entretenimento Digital, 2023, Brasil. Anais Estendidos do XXII Simpósio Brasileiro de Jogos e Entretenimento Digital (SBGames Estendido 2023), 2023. p. 293.
-- [DOI>](http://dx.doi.org/10.1109/sbgames54170.2021.00026)PINHEIRO, EMERSON B. ; VIDAL, CRETO A. ; NETO, JOAQUIM B. CAVALCANTE ; LEITE, ANTONIO J. MELO ; GOMES, GEORGE A. M. ; <bold>DA S. BARBOSA, ICARO</bold> . RealShooting: Expanding the experience of point-and-click target shooting games. In: 2021 20th Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2021, Gramado. 2021 20th Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2021. p. 144-152.
+- Godot
+- Unity
+- Unreal
 
 ## Languages
 
 - C/C++
 - C#
+- GDScript
 - Python
-- Javascript
+- JavaScript
 - Java
+
+## Languages
+
+- Portuguese (native)
+- English (B1)
+- Spanish (B1)
 
 ## Contact
 
