@@ -5,7 +5,9 @@
     "empresa": "Escola de Saúde Pública do Ceará (ESP)",
     "local": "Fortaleza, CE",
     "inicio": "2025-06",
-    "descricao": []
+    "descricao": [
+      "Atuação no desenvolvimento back-end utilizando as linguagens PHP e Python. As principais responsabilidades incluem a implementação de soluções de Inteligência Artificial (IA) e o apoio na realização de testes dos programas desenvolvidos na instituição."
+    ]
   },
   {
     "id": "c++-lsbd",
@@ -14,7 +16,9 @@
     "local": "Fortaleza, CE",
     "inicio": "2023-04",
     "fim": "2024-08",
-    "descricao": []
+    "descricao": [
+      "Atuação na resolução de bugs e na implementação de algoritmos para comunicação e recolha de informações de hardware. O desenvolvimento teve como objetivo principal realizar a análise e monitorização do estado de saúde de computadores."
+    ]
   },
   {
     "id": "iniciacao-cientifica",
@@ -23,6 +27,8 @@
     "local": "Fortaleza, CE",
     "inicio": "2018",
     "fim": "2021",
-    "descricao": []
+    "descricao": [
+      "Atuação no desenvolvimento de aplicações de Computação Gráfica no grupo de pesquisa CRAb. O principal projeto consistiu na criação e desenvolvimento em C++ de um modelador de edifícios projetado para simulações fisicamente realistas."
+    ]
   }
 ]
